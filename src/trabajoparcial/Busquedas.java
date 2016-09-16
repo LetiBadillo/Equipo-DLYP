@@ -44,8 +44,8 @@ public void MostrarResultado(int q){ //Utilizando el método de búsqueda imprim
     
     System.out.println("El número no se encuentra en el vector.");
     }else if(q>=0){ //si es diferente de -1, imprime la posición devuelta+1
-        System.out.println("El elemento se encuentra en la posición "+(q+1));    
-    }else if(q==-4){
+        System.out.println("El elemento se encuentra en la posición "+(q+1));    //muestra el índice del arreglo que devolvió el método de búsquedas
+    }else if(q==-4){ //Si el resultado de la búsqueda es -4 (que sería así si se le llama desde el método del menu), se sale del sistema
         System.exit(0);   
     }
     
@@ -61,8 +61,18 @@ public static int[] CrearVector(){
         
         for(int i=0; i<vector.length; i++){
         System.out.println("Introduzca el elemento #"+(i+1)+" y presione enter"); //pide el número de elementos
-        e=sc.nextInt();
-        vector[i]=e;    
+        try{
+        e=sc.nextInt(); //Almacena el número introducido por el usuario
+        vector[i]=e; //Guarda el número en el vector
+        }
+        
+         catch(InputMismatchException x){ //Si el usuario introduce algo distinto a un entero
+           vector[i]=0; //temporalmente se guarda un 0 en el vector
+             sc.nextLine(); //acepta la línea que introdujo el usuario pero no la almacena
+           i--; //i se disminuye para volver a pasar por ese índice
+           System.out.println("Caracter inválido. Escriba números enteros."); //Imprime el error
+        }
+            
         }
         
     return vector; //Devuelve el vector creado a partir de la información solicitada por el usuario.
