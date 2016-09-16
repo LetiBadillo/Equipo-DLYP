@@ -8,9 +8,14 @@ package trabajoparcial;
 import static trabajoparcial.Binaria.menu; //importa método de la clase Binaria para que este pueda ser usado
 
 /**
- *
- * @author ASUS
+ * Equipo DLYP
+ * "DLYPeando hasta el fin"
+ *Blanca Leticia Badillo Guzmán 
+ *Daniel Alejandro Salinas Olivares 
+ *Dante Augusto Sinencio Álvarez
+ *Jesús Parga Vela
  */
+
 public class TrabajoParcial {
 
     /**
