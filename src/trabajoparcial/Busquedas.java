@@ -8,16 +8,16 @@ package trabajoparcial;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.Vector;
-/*
-
-
-f.	QueBusco. Que devuelva un entero que representa el número a buscar dentro del vector proporcionado por el usuario.
-g.	Busqueda (Abstracta) que regrese un entero y reciba como parámetros un vector y el elemento a buscar.
-*/
 /**
- *
- * @author ASUS
+ * Equipo DLYP
+ * "DLYPeando hasta el fin"
+ *Blanca Leticia Badillo Guzmán 
+ *Daniel Alejandro Salinas Olivares 
+ *Dante Augusto Sinencio Álvarez
+ *Jesús Parga Vela
  */
+
+
 public abstract class Busquedas {
  static int[] vector;
  static Scanner sc = new Scanner(System.in);
@@ -87,7 +87,7 @@ public static int[] CrearVector(){
         
     return vector; //Devuelve el vector creado a partir de la información solicitada por el usuario.
 }
-/*f.	QueBusco. Que devuelva un entero que representa el número a buscar dentro del vector proporcionado por el usuario.*/
+
 
 public static int QueBusco(){ //Devuelve el número que el usuario busca
    boolean e=true;
