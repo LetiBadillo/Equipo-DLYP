@@ -110,20 +110,20 @@ public class Binaria extends Busquedas implements MOrdenamiento {
                 e.MSeleccion(v); //Ordena el vector por el método de selección
                
             } else if(w==2){
-                e.MBurbuja(v);
+                e.MBurbuja(v); //Ordena el vector por el método de la burbuja
                 
             }else if(w==3){
-                e.MQSort(v);
+                e.MQSort(v); //Ordena el vector por el método de QuickSort
                 
             }
-            else if(w==4){
+            else if(w==4){ //Se sale del programa
                 System.out.println("¡Hasta luego! \n(⊃｡•́‿•̀｡)⊃━☆ﾟ.*･｡ﾟ");
                 
                 e.MostrarResultado(-4);
             }else{ 
-            System.out.println("Opción inválida (⋟﹏⋞)");
+            System.out.println("Opción inválida (⋟﹏⋞)"); //Si el usuario introduce un número fuera del rango de opciones o un caractér
             System.out.println("Intenta de nuevo.");
-            menu(e,v);    
+            menu(e,v);    //se manda a llamar a sí mismo y vuelve a preguntar
             }
 
 
