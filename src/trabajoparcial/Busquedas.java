@@ -53,11 +53,21 @@ public void MostrarResultado(int q){ //Utilizando el método de búsqueda imprim
 }
 
 public static int[] CrearVector(){ 
-    
+    boolean entero = true;
     int c, e;
+        while(entero==true){
         System.out.println("Introduzca el número de elementos del vector");
+        try{
         c = sc.nextInt(); //almacena el número de elementos en variable c
         vector = new int [c]; //Crea el vector dados los estándares del usuario
+        entero = false;
+        }
+         catch(InputMismatchException x){ //Si el usuario introduce algo distinto a un entero
+             sc.nextLine(); //acepta la línea que introdujo el usuario pero no la almacena
+             entero=true;
+            System.out.println("Caracter inválido. Escriba números enteros."); //Imprime el error
+        }
+        }
         
         for(int i=0; i<vector.length; i++){
         System.out.println("Introduzca el elemento #"+(i+1)+" y presione enter"); //pide el número de elementos
@@ -67,7 +77,7 @@ public static int[] CrearVector(){
         }
         
          catch(InputMismatchException x){ //Si el usuario introduce algo distinto a un entero
-           vector[i]=0; //temporalmente se guarda un 0 en el vector
+           
              sc.nextLine(); //acepta la línea que introdujo el usuario pero no la almacena
            i--; //i se disminuye para volver a pasar por ese índice
            System.out.println("Caracter inválido. Escriba números enteros."); //Imprime el error
