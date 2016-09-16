@@ -9,8 +9,12 @@ import java.util.InputMismatchException;
 import java.util.Vector;
 
 /**
- *
- * @author ASUS
+ * Equipo DLYP
+ * "DLYPeando hasta el fin"
+ *Blanca Leticia Badillo Guzmán 
+ *Daniel Alejandro Salinas Olivares 
+ *Dante Augusto Sinencio Álvarez
+ *Jesús Parga Vela
  */
 
 public class Binaria extends Busquedas implements MOrdenamiento {
