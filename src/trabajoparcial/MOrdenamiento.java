@@ -8,9 +8,14 @@ package trabajoparcial;
 import java.util.Vector;
 
 /**
- *
- * @author ASUS
+ * Equipo DLYP
+ * "DLYPeando hasta el fin"
+ *Blanca Leticia Badillo Guzmán 
+ *Daniel Alejandro Salinas Olivares 
+ *Dante Augusto Sinencio Álvarez
+ *Jesús Parga Vela
  */
+
 public interface MOrdenamiento {
     /*MSeleccion, MBurburja, MQSort, que todos reciban como parámetro un vector de enteros.*/
     
